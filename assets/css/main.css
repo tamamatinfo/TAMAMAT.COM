@@ -1,15 +1,19 @@
 /* TAMAMAT CLASSES */
+/* Importing Fredoka and its best pairing partners */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 
 .site-title {
 	margin-top: 25px;
-    font-family: Uncial Antiqua, system-ui;
+    font-family: 'Fredoka','Quicksand','Montserrat', sysans-serif;
     font-size: 30px;
     font-style: normal;
+    color: #1E293B;
     font-weight: 500;
-	color: #005fed;
-/*    
-    line-height: 1.2;
-    margin-bottom: 0;  
+/*  
+color: #3B82F6;
+line-height: 1.2;
+margin-bottom: 0;  
 */
     text-transform: uppercase;
 }
@@ -27,8 +31,8 @@
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #005fed; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #005fed; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --heading-color: #3B82F6; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #1E293B; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -36,11 +40,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #012970;  /* The default color of the main navmenu links */
-  --nav-hover-color: #005fed; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #3B82F6; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #005fed; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #3B82F6; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -166,10 +170,13 @@ h6 {
 }
 
 .header .logo h1 {
-  font-size: 25px;
-/*  margin: 0;*/
-  font-weight: 500;
+  font-size: 21px;
+/*  
+margin: 0;
   color: var(--heading-color);
+*/
+  font-weight: 500;
+
 }
 
 .header .btn-getstarted,

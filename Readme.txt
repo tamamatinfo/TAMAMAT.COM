@@ -2,11 +2,11 @@ git init
 
 git add .
 
-git commit -m "Site Upload from VS to GitHub"
+git commit -m "SiteV2 Upload from VS to GitHub"
 
-git remote add origin https://github.com/MEET-TAMAMAT/TAMAMAT.COM.git
+git remote add origin https://github.com/tamamatinfo/TAMAMAT.COM.git
 
-git push -u origin master
+git push -u origin main
 
 
 To upload VS file to GitHub every time use:

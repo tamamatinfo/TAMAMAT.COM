@@ -9,6 +9,12 @@
   // Replace contact@example.com with your real receiving email address
   $receiving_email_address = 'contact@example.com';
 
+  // show a simple message when accessed directly
+  if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    echo "<h1>Newsletter Subscription Handler</h1><p>This page is intended for handling POST submissions only. Use the site form to send data.</p>";
+    exit;
+  }
+
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
   } else {

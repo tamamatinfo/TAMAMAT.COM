@@ -34,7 +34,7 @@ margin-bottom: 0;
   --heading-color: #3B82F6; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #1E293B; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --contrast-color: #F4A300; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -196,6 +196,12 @@ margin: 0;
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
+.php-email-form .row.gy-4 h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
 
 @media (max-width: 1200px) {
   .header .logo {
@@ -244,6 +250,7 @@ margin: 0;
     display: flex;
     list-style: none;
     align-items: center;
+    justify-content: center; /* center items horizontally on desktop */
   }
 
   .navmenu li {
@@ -337,8 +344,23 @@ margin: 0;
     left: -100%;
     visibility: visible;
   }
+
+  /* center the navmenu itself on large screens */
+  .header .navmenu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
+/* hide platform name on very small screens */
+@media (max-width: 390px) {
+  /* target both the h1 and any element inside logo for specificity */
+  .header .sitename,
+  .header .logo .sitename {
+    display: none !important;
+  }
+}
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
@@ -820,7 +842,7 @@ section,
   font-weight: 700;
   padding: 8px 20px;
   margin: 0;
-  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+   background: color-mix(in srgb, var(--contrast-color), transparent 65%);
   color: var(--accent-color);
   display: inline-block;
   text-transform: uppercase;
@@ -1101,6 +1123,18 @@ section,
 /*--------------------------------------------------------------
 # Alt Features Section
 --------------------------------------------------------------*/
+/* reduce vertical gap below the section title specifically for alt-features */
+.alt-features .section-title {
+  margin-bottom: 5px;
+}
+
+/* adjust padding on features and alt-features so the distance between titles matches pricing */
+#features.section {
+  padding-bottom: 0;
+}
+#alt-features.section {
+  padding-top: 10px; /* reduces total gap to ~15px between title and first item */
+}
 .alt-features .icon-box {
   display: flex;
 }
@@ -1401,9 +1435,9 @@ section,
 }
 
 .faq .faq-container .faq-item h3 {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 27px;
   margin: 0 30px 0 0;
   transition: 0.3s;
   cursor: pointer;
@@ -2137,12 +2171,6 @@ section,
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
 /*--------------------------------------------------------------
 # Blog Posts Section

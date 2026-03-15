@@ -2809,11 +2809,11 @@ section,
 
 /* Responsive image sizing for features section */
 .responsive-img {
-  width: 75%;
+  width: 85%;
 }
 
 @media (max-width: 576px) {
   .responsive-img {
-    width: 25%;
+    width: 75%
   }
 }

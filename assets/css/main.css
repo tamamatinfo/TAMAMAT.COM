@@ -2806,3 +2806,14 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+/* Responsive image sizing for features section */
+.responsive-img {
+  width: 75%;
+}
+
+@media (max-width: 576px) {
+  .responsive-img {
+    width: 25%;
+  }
+}

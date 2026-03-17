@@ -73,6 +73,7 @@
 .z-callme-widget .icon-connecting-phone-ico:before {
   font-family: "icomoon" !important;
   content: "\e900";
+  font-size: 24px;
 }
 .z-callme-widget .icon-default-phone-ico:before {
   font-family: "icomoon" !important;
@@ -521,4 +522,22 @@
   top: -99999px !important;
   left: -999999px !important;
   position: absolute !important;
+}
+ i.z-icon {
+    font-size: 22px;};
+
+i.z-icon.icon-default-phone-ico {
+  font-size: 22px;
+}
+
+i.z-icon.icon-connecting-phone-ico {
+  font-size: 22px;
+}
+
+i.z-icon.icon-done-ico {
+  font-size: 22px;
+}
+
+i.z-icon.icon-finish-phone-ico {
+  font-size: 22px;
 }

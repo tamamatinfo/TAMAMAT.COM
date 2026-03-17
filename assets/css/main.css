@@ -50,7 +50,8 @@
 }
 /* Required field asterisk styling */
 .required-label {
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: normal;
   color: var(--default-color);
   margin-bottom: 4px;
   display: block;

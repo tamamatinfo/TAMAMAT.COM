@@ -24,11 +24,7 @@
       rel="stylesheet"
     />
 
-    <!-- Uncial Antiqua Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap"
-      rel="stylesheet"
-    />
+
     <!-- Fredoka Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
@@ -652,8 +648,8 @@
                       class="testimonial-img"
                       alt=""
                     />
-                    <h3>Saul Goodman</h3>
-                    <h4>Ceo &amp; Founder</h4>
+                    <h3>Daniel Novak</h3>
+                    <h4>School Owner</h4>
                   </div>
                 </div>
               </div>
@@ -681,8 +677,8 @@
                       class="testimonial-img"
                       alt=""
                     />
-                    <h3>Sara Wilsson</h3>
-                    <h4>Designer</h4>
+                    <h3>Maria Garcia</h3>
+                    <h4>Private Language Coach</h4>
                   </div>
                 </div>
               </div>
@@ -709,8 +705,8 @@
                       class="testimonial-img"
                       alt=""
                     />
-                    <h3>Jena Karlis</h3>
-                    <h4>Store Owner</h4>
+                    <h3>Sofia Kos</h3>
+                    <h4>English Language Teacher</h4>
                   </div>
                 </div>
               </div>
@@ -728,7 +724,7 @@
                   <p>
                     The simplicity is what convinced me to switch. Invitations
                     take seconds to send, and students enter the classroom with
-                    a single click. It’s a reliable and professional solution
+                    a single click. It's a reliable and professional solution
                     for teachers who work with small groups.
                   </p>
                   <div class="profile mt-auto">
@@ -738,7 +734,7 @@
                       alt=""
                     />
                     <h3>Matt Brandon</h3>
-                    <h4>Freelancer</h4>
+                    <h4>Director of Studies</h4>
                   </div>
                 </div>
               </div>
@@ -765,8 +761,8 @@
                       class="testimonial-img"
                       alt=""
                     />
-                    <h3>John Larson</h3>
-                    <h4>Entrepreneur</h4>
+                    <h3>Anton Markov</h3>
+                    <h4>Pronunciation Coach</h4>
                   </div>
                 </div>
               </div>
@@ -799,7 +795,7 @@
                   <div
                     class="info-item aos-init aos-animate"
                     data-aos="fade"
-                    data-aos-delay="300"
+                    data-aos-delay="200"
                   >
                     <!-- CallmeWidget Placeholder-->
                     <div id="myZadarmaCallmeWidget17889"></div>
@@ -865,11 +861,11 @@
                   <div
                     class="info-item aos-init aos-animate"
                     data-aos="fade"
-                    data-aos-delay="200"
+                    data-aos-delay="300"
                   >
                     <a href="https://t.me/tamamatinfo"
                       ><img
-                        src="assets/img/Telegram-38x38.svg"
+                        src="assets/img/Telegram-40x40.svg"
                         alt="Telegram Icon"
                         style="width: 38px; height: 38px; margin-right: 8px"
                     /></a>
@@ -886,10 +882,12 @@
                     data-aos="fade"
                     data-aos-delay="400"
                   >
-                    <i class="bi bi-envelope"></i>
-                    <h3>Email Us</h3>
-                    <p>info@example.com</p>
-                    <p>contact@example.com</p>
+                        <a href="mailto:info@tamamat.com" style="display:block;text-decoration:none;color:inherit;">
+                          <i class="bi bi-envelope" style="color: #3B82F6"></i>
+                          <h3>Email Us</h3>
+                          <p>&nbsp;</p>
+                          <p>info@tamamat.com</p>
+                        </a>
                   </div>
                 </div>
                 <!-- End Info Item -->
@@ -900,7 +898,7 @@
                     data-aos="fade"
                     data-aos-delay="500"
                   >
-                    <i class="bi bi-clock"></i>
+                    <i class="bi bi-clock" style="color: #3B82F6"></i>
                     <h3>Open Hours</h3>
                     <p>Monday - Friday</p>
                     <p>9:00AM - 05:00PM</p>
@@ -910,67 +908,41 @@
               </div>
             </div>
 
-            <div class="col-lg-6">
-              <form
-                action="forms/contact.php"
-                method="post"
-                class="php-email-form aos-init aos-animate"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <div class="row gy-4">
-                  <div class="col-md-6">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      placeholder="Your Name"
-                      required=""
-                    />
+<div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+              <h3>Leave your details and we'll get in touch.</h3>
+
+<div class="col-md-6">
+                    
+                    <input placeholder="Name" type="text" name="name" id="name" class="form-control" required="" value="">
                   </div>
 
-                  <div class="col-md-6">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      placeholder="Your Email"
-                      required=""
-                    />
+                <div class="col-md-6">
+                    <input placeholder="Phone" type="text" class="form-control" name="phones[0][phone]" id="phone" required="" value="">
                   </div>
 
-                  <div class="col-12">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="subject"
-                      placeholder="Subject"
-                      required=""
-                    />
+<div class="col-12">
+                    <input placeholder="Email" type="email" class="form-control" name="contacts[0][value]" id="email" required="" value="">
                   </div>
 
-                  <div class="col-12">
-                    <textarea
-                      class="form-control"
-                      name="message"
-                      rows="6"
-                      placeholder="Message"
-                      required=""
-                    ></textarea>
+<div class="col-12">
+                    <label for="comment" class="required-label">Timezone, availability, preferred contact method, or questions</label>
+                    <textarea placeholder="Message" class="form-control" name="comment" id="comment" rows="2" value=""></textarea>
                   </div>
 
-                  <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
-                      Your message has been sent. Thank you!
-                    </div>
 
-                    <button type="submit">Send Message</button>
-                  </div>
+                <div class="col-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
                 </div>
-              </form>
-            </div>
+
+              </div>
+            </form>
+          </div>
             <!-- End Contact Form -->
           </div>
         </div>

@@ -1,9 +1,8 @@
+UPDATE ALL FILE IN FOLDER
+
 git init
-
 git add .
-
 git commit -m "SiteV2 Upload from VS to GitHub"
-
 git remote add origin https://github.com/tamamatinfo/TAMAMAT.COM.git
 
 git push -u origin main
@@ -23,7 +22,7 @@ cmdkey /delete:git:https://github.com
 
 git push -u origin main --force
 
-Commands to update index.html on github
+UPDATE index.html on github
 # 1. see what changed
 git status
 # 2. stage the file (or everything)
